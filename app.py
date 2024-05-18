@@ -2,8 +2,11 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route('/app/api/phoneValidationLogin', methods=['POST'])
-def get_data(*kargs):
+# @app.route('/', methods=['POST', "GET"])
+# @app.route('/app/api/phoneValidationLogin', methods=['POST'])
+@app.route('/', defaults={'path': ''}, methods=['POST', "GET"])
+@app.route('/<path:path>', methods=['POST', "GET"])
+def get_data(path):
     response = {
         "code": 0,
         "data": {
@@ -30,7 +33,6 @@ def get_data(*kargs):
         },
         "msg": "Success"
     }
-
     return jsonify(response)
 
 

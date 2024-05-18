@@ -10,7 +10,7 @@ def get_data(path):
     response = {
         "code": 0,
         "data": {
-            "expire": "2025-12-31T23:59:59Z",
+            "expire": "2055-12-31T23:59:59Z",
             "token": "abcdef123456",
             "user": {
                 "addtime": "2023-05-01T12:34:56Z",

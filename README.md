@@ -10,12 +10,16 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
 ## Démarrage
 
-### 1. Cloner le dépôt
+### 1. Cloner le dépôt ou Télécharger le repos
 
+Mode expert
 ```bash
 git clone https://github.com/cedric-guadalupe/powervision-s1.git
 cd powervision-s1
 ```
+Mode facile
+https://github.com/cedric-guadalupe/powervision-s1/archive/refs/heads/main.zip
+Tu décompresse le fichier dans un répertoire
 
 ### 2. Construire et démarrer les services
 

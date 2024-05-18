@@ -6,8 +6,8 @@ Ce dépôt contient une simple API Flask qui simule l'api d'activation de PowerV
 
 Voici un proxy déjà configuré jusqu'à lundi
 
-Host : powervision-s1.duckdns.org
-Port : 8888
+ - Host : powervision-s1.duckdns.org
+ - Port : 8888
 
 ### 1. Modifier Temporairement le proxy de votre téléphone
 
@@ -21,8 +21,6 @@ En bas de la page ouverte il y aura une section « proxy HTTP », sélectionnez 
 - Serveur : powervision-s1.duckdns.org
 - Port : 8888
 - Cliquez sur enregistrer
-
-Sur android, ça doit être pareil
 
 #### Android
 Accédez aux Paramètres de votre smartphone Android
@@ -45,15 +43,16 @@ Lancer l'application et cliquer sur activer et mettez n'importe quoi comme numé
 Sur Iphone : Réglages > Wi-Fi -> l'icone i (Le nom de votre wifi) > Configurer le proxy > Sélectionnez "Désactivé" & Cliquer sur enregistrer
 
 
-## Prérequis
+## Mode Expert
+### Prérequis
 
 Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 - Docker
 - Docker Compose
 
-## Démarrage
+### Démarrage
 
-### 1. Cloner le dépôt ou Télécharger le repos
+#### 1. Cloner le dépôt ou Télécharger le repos
 
 Mode expert
 ```bash
@@ -64,7 +63,7 @@ Mode facile
 https://github.com/cedric-guadalupe/powervision-s1/archive/refs/heads/main.zip
 Tu décompresse le fichier dans un répertoire
 
-### 2. Construire et démarrer les services
+#### 2. Construire et démarrer les services
 
 Utilisez Docker Compose pour construire et démarrer les services.
 
@@ -73,7 +72,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-### 3. Modifier Temporairement le proxy de votre téléphone
+#### 3. Modifier Temporairement le proxy de votre téléphone
 
 Sur Iphone : Réglages > Wi-Fi -> l'icone i (Le nom de votre wifi) > Configurer le proxy > Manuel :
     - Serveur : IP local de votre PC (Par exemple chez Orange 192.168.1.?? )
@@ -82,10 +81,10 @@ Sur Iphone : Réglages > Wi-Fi -> l'icone i (Le nom de votre wifi) > Configurer 
 
 Sur android, ça doit être pareil
 
-### 4. Activer le gimbal Powervision S1
+#### 4. Activer le gimbal Powervision S1
 
 Lancer l'application et cliquer sur activer et mettez n'importe quoi comme numéro de téléphone et code de vérification
 
-### 5. Important !!!!!!!!!! Désactiver le proxy
+#### 5. Important !!!!!!!!!! Désactiver le proxy
 
 Sur Iphone : Réglages > Wi-Fi -> l'icone i (Le nom de votre wifi) > Configurer le proxy > Sélectionnez "Désactivé" & Cliquer sur enregistrer

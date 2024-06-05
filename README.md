@@ -4,10 +4,14 @@ Ce dépôt contient une simple API Flask qui simule l'api d'activation de PowerV
 
 ## Juste pour les dealabers
 
-Voici un proxy déjà configuré jusqu'à lundi
+Voici un proxy déjà configuré :
 
  - Host : powervision-s1.duckdns.org
  - Port : 8888
+
+
+
+
 
 ### 1. Modifier Temporairement le proxy de votre téléphone
 
